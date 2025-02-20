@@ -25,6 +25,13 @@ Did not converted class to function
 Showing all success. when used `gradle rewriteRun`
 
 
+-- Applied below commnd 
+
+mod run . --recipe ApplyCodemod --recipe-option "transform=react-declassify" --recipe-option "executable='@codemod/cli/bin/codemod --plugin'" 
+
+Skipping recipe run because no LST was found
+
+
 
 
 
