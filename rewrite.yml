@@ -1,0 +1,10 @@
+  
+tags:
+  - codemods
+  - react
+  - reactjs
+recipeList:
+  - org.openrewrite.codemods.ApplyCodemod:
+      transform: react-declassify
+      executable: '@codemod/cli/bin/codemod --plugin'
+      fileFilter: '**/*.(j|t)sx'
