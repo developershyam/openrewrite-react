@@ -1,0 +1,16 @@
+plugins {
+    id("org.openrewrite.rewrite") version("7.1.4")
+}
+
+rewrite {
+    activeRecipe("org.openrewrite.codemods.migrate.react.ClassComponentToFunctionComponent")
+    setExportDatatables(true)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    rewrite("org.openrewrite.recipe:rewrite-codemods:0.8.0")
+}
